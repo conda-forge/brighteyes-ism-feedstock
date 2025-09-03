@@ -1,13 +1,13 @@
 {% set name = "brighteyes-ism" %}
-{% set version = "1.3.1" %}
+{% set version = "1.4.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/brighteyes-ism-{{ version }}.tar.gz
-  sha256: 3d11af860416c7d2cd93ae7d28a398fae5a0c7a50cdbf92b8ebb1270641d5040
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 9e47cb5a994ae69de78020d5a820acb76bb6273bfd5044e81d406f52c72bb06f
 
 build:
   noarch: python
